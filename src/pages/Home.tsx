@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
           gutterBottom
           sx={{
             fontWeight: 'bold',
-            color: theme.palette.text.primary, // Changed to text.primary for better visibility
+            color: theme.palette.text.primary, 
             mb: 2,
           }}
         >
@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
           variant="h6"
           sx={{
             mb: 4,
-            color: theme.palette.text.secondary, // Use secondary for subtext
+            color: theme.palette.text.secondary, 
           }}
         >
           {t('app.welcomeMessage')} 
@@ -62,7 +62,7 @@ export const Home: React.FC = () => {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.contrastText,
             '&:hover': {
-              backgroundColor: theme.palette.primary.dark, // Darker on hover
+              backgroundColor: theme.palette.primary.dark, 
             }
           }}
         >

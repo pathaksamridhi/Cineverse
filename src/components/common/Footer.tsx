@@ -30,9 +30,8 @@ export const Footer = () => {
     left: 0,
     width: '100%',
     textAlign: 'center',
-    background: '#', // or your dark brown
-    color: '#fff',          // <-- This makes text white
-    py: 1,
+    background: '#', 
+    color: '#fff',        
     fontWeight: 500,
     zIndex: 10,
   }}

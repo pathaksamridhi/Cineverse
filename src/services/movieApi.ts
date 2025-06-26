@@ -2,7 +2,7 @@ import axios from 'axios';
 import { SearchResponse, MovieApiResponse } from '../types/movie';
 import { API_KEY, BASE_URL } from '../utils/constants';
 
-// ✅ Axios instance with default API key
+
 const movieApi = axios.create({
   baseURL: BASE_URL,
   params: {
@@ -10,7 +10,7 @@ const movieApi = axios.create({
   },
 });
 
-// 🔍 Search movies with optional filters: year & type
+
 export const searchMovies = async (
   query: string,
   page: number = 1,
@@ -29,7 +29,7 @@ export const searchMovies = async (
   return response.data;
 };
 
-// 🎬 Get full movie details by IMDb ID
+
 export const getMovieDetails = async (id: string): Promise<MovieApiResponse> => {
   const response = await movieApi.get('', {
     params: {

@@ -31,14 +31,14 @@ body {
 }
 html {
   min-height: 100%;
-  background: #E3DAC9; /* or your desired color */
+  background: #E3DAC9; 
 }
 
 body, #root {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background: transparent; /* Let html show through */
+  background: transparent; 
 }
 
 

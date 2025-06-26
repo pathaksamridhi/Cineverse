@@ -1,4 +1,4 @@
-import { Button, useTheme } from '@mui/material'; // Added useTheme
+import { Button, useTheme } from '@mui/material'; 
 import { ArrowBack } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -17,13 +17,13 @@ export const BackButton: React.FC<BackButtonProps> = ({
 }) => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const theme = useTheme(); // Access theme for consistent styling
+  const theme = useTheme(); 
 
   const handleBack = () => {
     if (window.history.length > 2) {
       navigate(-1);
     } else {
-      navigate('/'); // fallback route
+      navigate('/'); 
     }
   };
 
@@ -37,7 +37,7 @@ export const BackButton: React.FC<BackButtonProps> = ({
         textTransform: 'none',
         fontWeight: 600,
         fontSize: '1rem',
-        // Theme-aware styling
+        
         color: theme.palette.text.primary,
         borderColor: variant === 'outlined' ? theme.palette.divider : undefined,
         backgroundColor: variant === 'contained' ? theme.palette.background.paper : undefined,

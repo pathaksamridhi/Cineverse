@@ -20,7 +20,7 @@ import { getMovieDetails } from '../services/movieApi';
 import { MovieApiResponse, MovieDetails as MovieDetailsType } from '../types/movie';
 import { useFavorites } from '../hooks/useFavorites';
 import { BackButton } from '../components/common/BackButton';
-import { useTheme } from '@mui/material/styles'; // Add this import
+import { useTheme } from '@mui/material/styles'; 
 
 export const MovieDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -29,11 +29,11 @@ export const MovieDetails: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const { isFavorite, toggleFavorite } = useFavorites();
-  const theme = useTheme(); // Use the theme
+  const theme = useTheme(); 
 
   useEffect(() => {
     if (id) fetchMovieDetails(id);
-    // eslint-disable-next-line
+    
   }, [id]);
 
   const fetchMovieDetails = async (movieId: string) => {
@@ -106,11 +106,11 @@ export const MovieDetails: React.FC = () => {
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      {/* Back button row */}
+     
       <Box sx={{ mb: 3, display: 'flex', justifyContent: 'flex-start' }}>
         <BackButton />
       </Box>
-      {/* Center the card horizontally */}
+     
       <Box sx={{ display: 'flex', justifyContent: 'center' }}>
         <Paper
           elevation={3}
@@ -120,12 +120,12 @@ export const MovieDetails: React.FC = () => {
             flexDirection: { xs: 'column', md: 'row' },
             alignItems: { xs: 'center', md: 'flex-start' },
             gap: 4,
-            background: theme.palette.background.default, // Theme-aware background
+            background: theme.palette.background.default, 
             maxWidth: 1100,
             width: '100%',
           }}
         >
-          {/* Poster on the left */}
+          
           <Box
             sx={{
               minWidth: { xs: 220, sm: 300, md: 360 },
@@ -141,7 +141,7 @@ export const MovieDetails: React.FC = () => {
                 borderRadius: 4,
                 boxShadow: 6,
                 overflow: 'hidden',
-                bgcolor: theme.palette.background.paper, // Theme-aware
+                bgcolor: theme.palette.background.paper, 
               }}
             >
               <CardMedia
@@ -156,9 +156,9 @@ export const MovieDetails: React.FC = () => {
               />
             </Card>
           </Box>
-          {/* Details on the right */}
+          
           <Box sx={{ flex: 1, minWidth: 0 }}>
-            {/* Title and Favorite */}
+           
             <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
               <Typography
                 variant="h3"
@@ -170,7 +170,7 @@ export const MovieDetails: React.FC = () => {
                   fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
                   lineHeight: 1.1,
                   wordBreak: 'break-word',
-                  color: theme.palette.text.primary, // Theme-aware
+                  color: theme.palette.text.primary, 
                 }}
               >
                 {movie.Title}{' '}
@@ -195,7 +195,7 @@ export const MovieDetails: React.FC = () => {
                   key={genre}
                   label={genre}
                   sx={{
-                    bgcolor: theme.palette.secondary.main, // Use theme palette
+                    bgcolor: theme.palette.secondary.main, 
                     color: theme.palette.secondary.contrastText,
                     fontWeight: 500,
                     fontSize: 16,

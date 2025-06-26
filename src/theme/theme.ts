@@ -10,20 +10,20 @@ export const useAppTheme = () => {
         palette: {
           mode: darkMode ? 'dark' : 'light',
           primary: {
-            main: '#6D4C41', // Rich brown for better contrast
+            main: '#6D4C41',
             contrastText: '#fff',
           },
           secondary: {
-            main: '#FFD54F', // Warm yellow accent
+            main: '#FFD54F', 
             contrastText: darkMode ? '#222' : '#3D2B1F',
           },
           background: {
-            default: darkMode ? '#181818' : '#F5F5DC', // Softer beige for light, deep gray for dark
+            default: darkMode ? '#181818' : '#F5F5DC', 
             paper: darkMode ? '#232323' : '#fff',
           },
           text: {
             primary: darkMode ? '#fff' : '#3D2B1F',
-            secondary: darkMode ? '#FFD54F' : '#6D4C41', // Accent for secondary text
+            secondary: darkMode ? '#FFD54F' : '#6D4C41', 
           },
         },
         components: {

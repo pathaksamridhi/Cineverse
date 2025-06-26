@@ -114,7 +114,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle }) => {
                     minWidth: 0,
                     mr: isDesktopDrawerOpen || isMobile ? 3 : 'auto',
                     justifyContent: 'center',
-                    color: '#fff', // <-- This makes icons white!
+                    color: '#fff', 
                   }}
                 >
                   {item.icon}
@@ -168,8 +168,8 @@ export const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle }) => {
           '& .MuiDrawer-paper': {
             width: currentDrawerWidth,
             boxSizing: 'border-box',
-            backgroundColor: BROWN, // Brown sidebar
-            color: '#fff',          // White text/icons
+            backgroundColor: BROWN, 
+            color: '#fff',         
             borderRight: 'none',
             transition: theme.transitions.create('width', {
               easing: theme.transitions.easing.sharp,
