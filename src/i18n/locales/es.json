@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "फिल्म एक्सप्लोरर",
+    "search": "फिल्में खोजें",
+    "favorites": "पसंदीदा",
+    "home": "होम",
+    "searchPlaceholder": "फिल्म खोजें",
+    "details": "विवरण",
+    "loading": "लोड हो रहा है...",
+    "noResults": "कोई फिल्म नहीं मिली",
+    "error": "कुछ गलत हो गया",
+    "searchResults": "के लिए खोज परिणाम",
+    "searchError": "खोजने के लिए कृपया फिल्म का नाम दर्ज करें",
+    "back": "पीछे",
+    "startSearching": "खोज शुरू करें",
+    "welcomeMessage": "Cineverse में आपका स्वागत है! फिल्मों की खोज के लिए आपका प्रवेश द्वार।",
+    "copyright": "Cineverse © 2025 प्रतिलिप्यधिकार सुरक्षित",
+    "released": "रिलीज़",
+    "viewOnImdb": "IMDb पर देखें",
+    "cappedResults": "कुल {{total}} में से 500 परिणाम दिखाए जा रहे हैं। कृपया और विशिष्ट परिणाम देखने के लिए अपनी खोज को सीमित करें।"
+  },
+  "movie": {
+    "about": "परिचय",
+    "year": "वर्ष",
+    "plot": "कथानक",
+    "director": "निर्देशक",
+    "actors": "अभिनेता",
+    "addToFavorites": "पसंदीदा में जोड़ें",
+    "removeFromFavorites": "पसंदीदा से हटाएं",
+    "type": "प्रकार"
+  },
+  "filter": {
+      "allYears": "सभी वर्ष",
+      "allTypes": "सभी प्रकार",
+      "movie": "फ़िल्म",
+      "series": "श्रृंखला",
+      "episode": "एपिसोड"
+    }
+}

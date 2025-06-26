@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "Movie Explorer",
+    "search": "Search Movies",
+    "favorites": "Favorites",
+    "home": "Home",
+    "searchPlaceholder": "Search a movie",
+    "details": "Details",
+    "loading": "Loading...",
+    "noResults": "No movies found",
+    "error": "Something went wrong",
+    "searchResults": "Search Results for",
+    "searchError": "Please enter a movie name to search",
+    "back": "Back",
+    "startSearching": "START SEARCHING",
+    "welcomeMessage": "Welcome to Cineverse! Your gateway to exploring movies.",
+    "copyright": "Cineverse © 2025",
+    "released": "Released",
+    "viewOnImdb": "View on IMDb",
+    "cappedResults": "Showing 500 results out of {{total}} total results. Please refine your search to see more specific results."
+  },
+  "movie": {
+    "about": "About",
+    "year": "Year",
+    "plot": "Plot",
+    "director": "Director",
+    "actors": "Actors",
+    "addToFavorites": "Add to Favorites",
+    "removeFromFavorites": "Remove from Favorites",
+    "type": "Type"
+  },
+  "filter": {
+    "allYears": "All Years",
+    "allTypes": "All Types"
+  }
+}
